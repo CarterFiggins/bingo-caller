@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: gray;
+}
+
+.bingo-title {
+  font-size: 3.8rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.bingo-button {
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: black;
+  border: black 0.1rem solid;
+  border-radius: 0.5rem;
+  outline: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+.bingo-button:hover {
+  background-color: #777;
+  border: black 0.1rem solid;
+}
+
+.bingo-button:active {
+  background-color: #999;
+}
+
+.reset-button {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: black;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.bingo-ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 10rem;
+  font-size: 4rem;
+  color: white;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.small-bingo-ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #ff0000;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.last-five {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.bingo-ball-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  margin: 1rem;
+  border-collapse: collapse;
+}
+
+td {
+  width: 8rem;
+  font-size: 1.9rem;
+  color: blue;
+  background-color: #008cff;
+  padding: 0 2rem;
+}
+
+th {
+  width: 8rem;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+}
+
+tr {
+  height: 2.3rem;
+}
