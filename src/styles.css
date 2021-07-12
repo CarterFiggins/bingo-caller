@@ -8,13 +8,15 @@ body {
 
 .text {
   padding: 0.5rem;
-  /* color: white; */
   font-size: 1.5rem;
+  color: black;
+  /* color: white; */
 }
 
 .bingo-title {
   font-size: 3.8rem;
   margin-bottom: 1rem;
+  color: black;
   /* color: white; */
 }
 
