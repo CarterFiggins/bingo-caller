@@ -40,15 +40,6 @@ body {
   background-color: #999;
 }
 
-.reset-button {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  background-color: black;
-  border-radius: 0.5rem;
-  color: white;
-  padding: 0.5rem;
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -64,19 +55,66 @@ body {
   color: white;
   background-color: #ff3300;
   border-radius: 50%;
+  margin-top: 1rem;
 }
 
 .small-bingo-ball {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3rem;
-  width: 3rem;
-  font-size: 1.2rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2rem;
   color: white;
   background-color: #ff3300;
   border-radius: 50%;
   margin: 0 1rem;
+}
+
+.bingo-space {
+  height: 3rem;
+  width: 3rem;
+  font-size: 3rem;
+  border: black 0.1rem solid;
+  border-radius: 50%;
+  margin: 0.2rem;
+}
+
+.bingo-grid {
+  position: absolute;
+  left: 2rem;
+  top: 3rem;
+  border: black 0.1rem solid;
+  border-radius: 0.4rem;
+}
+
+.filled {
+  background-color: #ff3300;
+}
+
+.grid-button {
+  margin-top: 0.5rem;
+  position: absolute;
+  left: 6.6rem;
+  color: white;
+  background-color: black;
+  border: black 0.1rem solid;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.grid-button:hover {
+  background-color: #777;
+  border: black 0.1rem solid;
+}
+
+.grid-button:active {
+  background-color: #999;
+}
+
+.bottom-space {
+  margin-bottom: 1rem;
 }
 
 .last-five {
@@ -97,8 +135,8 @@ table {
 }
 
 td {
-  width: 8rem;
-  font-size: 1.9rem;
+  width: 10rem;
+  font-size: 2rem;
   color: black;
   background-color: #ffef96;
   padding: 0 2rem;

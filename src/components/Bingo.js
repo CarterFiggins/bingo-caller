@@ -30,8 +30,8 @@ export default function Bingo(props) {
   );
   const [count, setCount] = useState(0);
   const [currentBingoNumber, setCurrentBingoNumber] = useState(null);
-  const [bingoType, setBingoType] = useState();
   const [calledNumbers, setCalledNumbers] = useState(blankTable);
+  const [showGrid, setShowGrid] = useState(false);
 
   const generateBingoNumber = () => {
     if (count < bingoNumbers.length) {
@@ -62,6 +62,10 @@ export default function Bingo(props) {
 
   return (
     <div className="App">
+      {showGrid && <BingoType />}
+      <button className="grid-button" onClick={() => setShowGrid(!showGrid)}>
+        Show Bingo Grid
+      </button>
       <div className="bingo-title">High Stakes Bingo</div>
       <BingoHeader
         bingoButton={generateBingoNumber}
@@ -71,10 +75,9 @@ export default function Bingo(props) {
         lastFive={getLastFive()}
       />
       <div className="flex-center">
-        <BingoType bingoType={bingoType} setBingoType={setBingoType} />
         <BingoTable calledNumbers={calledNumbers} />
       </div>
-      <button className="reset-button" onClick={resetBingo}>
+      <button className="bingo-button bottom-space" onClick={resetBingo}>
         Reset Bingo
       </button>
     </div>

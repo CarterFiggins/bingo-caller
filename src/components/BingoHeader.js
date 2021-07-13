@@ -5,9 +5,7 @@ export default function BingoHeader(props) {
   return (
     <div className="column">
       <div className="flex-center">
-        {currentBingoNumber && (
-          <div className="bingo-ball">{currentBingoNumber || ""}</div>
-        )}
+        <div className="bingo-ball">{currentBingoNumber || ""}</div>
       </div>
       <div>
         {showButton && (
