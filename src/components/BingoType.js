@@ -7,7 +7,12 @@ export default function BingoType(props) {
       return (
         <div key={row} className="flex-center">
           {_.map(_.range(5), (col) => {
-            return <BingoTypeButton key={col} />;
+            return (
+              <BingoTypeButton
+                key={col}
+                text={row === 2 && col === 2 ? "FREE" : ""}
+              />
+            );
           })}
         </div>
       );

@@ -8,6 +8,8 @@ export default function BingoTypeButton(props) {
     <span
       onClick={() => setIsFilled(!isFilled)}
       className={`bingo-space ${isFilled ? "filled" : ""}`}
-    ></span>
+    >
+      {props.text}
+    </span>
   );
 }

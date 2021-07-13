@@ -74,10 +74,14 @@ body {
 .bingo-space {
   height: 3rem;
   width: 3rem;
-  font-size: 3rem;
+  font-size: 1rem;
   border: black 0.1rem solid;
   border-radius: 50%;
   margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 .bingo-grid {
@@ -90,6 +94,7 @@ body {
 
 .filled {
   background-color: #ff3300;
+  color: white;
 }
 
 .grid-button {
