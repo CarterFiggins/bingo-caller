@@ -1,10 +1,10 @@
 import { useState } from "react";
 import _ from "lodash";
 import BingoTable from "./BingoTable";
-import BingoType from "./BingoType";
+import BingoType from "./BingoGrid";
 import BingoHeader from "./BingoHeader";
 
-export default function Bingo(props) {
+export default function Bingo() {
   const createBingoNumbers = () => {
     let bingoNums = [];
     _.forEach(_.range(1, 16), (num) => {
@@ -37,6 +37,7 @@ export default function Bingo(props) {
     if (count < bingoNumbers.length) {
       setCurrentBingoNumber(bingoNumbers[count]);
       const clonedNumbers = _.cloneDeep(calledNumbers);
+      // pushes the bingo string to the calledNumbers object by letter.
       clonedNumbers[bingoNumbers[count][0]].push(bingoNumbers[count]);
       setCalledNumbers(clonedNumbers);
       setCount(count + 1);

@@ -4,11 +4,8 @@ export default function BingoTable(props) {
   const { calledNumbers } = props;
 
   const makeTable = () => {
-    let longestLength = 0;
     _.forEach(calledNumbers, (letterArrays, letter) => {
-      if (longestLength < letterArrays.length) {
-        longestLength = letterArrays.length;
-      }
+      // sort letter array of called numbers
       calledNumbers[letter] = _.sortBy(letterArrays, (bingoNum) => {
         return parseInt(_.split(bingoNum, "-")[1], 10);
       });

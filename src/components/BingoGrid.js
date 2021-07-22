@@ -1,14 +1,14 @@
 import _ from "lodash";
-import BingoTypeButton from "./BingoTypeButton";
+import BingoGridButton from "./BingoGridButton";
 
-export default function BingoType(props) {
+export default function BingoGrid() {
   const bingoGrid = () =>
     _.map(_.range(5), (row) => {
       return (
         <div key={row} className="flex-center">
           {_.map(_.range(5), (col) => {
             return (
-              <BingoTypeButton
+              <BingoGridButton
                 key={col}
                 text={row === 2 && col === 2 ? "FREE" : ""}
               />
