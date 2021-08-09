@@ -3,6 +3,7 @@ import _ from "lodash";
 import BingoTable from "./BingoTable";
 import BingoType from "./BingoGrid";
 import BingoHeader from "./BingoHeader";
+import { Link } from "react-router-dom";
 
 export default function Bingo() {
   const createBingoNumbers = () => {
@@ -62,12 +63,16 @@ export default function Bingo() {
   };
 
   return (
-    <div className="App">
+    <div className="App" id="bingo">
       {showGrid && <BingoType />}
       <button className="grid-button" onClick={() => setShowGrid(!showGrid)}>
         Show Bingo Grid
       </button>
-      <div className="bingo-title">High Stakes Bingo</div>
+      <Link className="timer-button" to={"/timer"}>
+        Timer
+      </Link>
+
+      {/* <div className="bingo-title">High Stakes Bingo</div> */}
       <BingoHeader
         bingoButton={generateBingoNumber}
         currentBingoNumber={currentBingoNumber}
