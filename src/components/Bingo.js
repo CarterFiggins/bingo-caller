@@ -46,13 +46,17 @@ export default function Bingo() {
   };
 
   const getLastFive = () => {
-    return _.reverse(
+    let lastFive = _.reverse(
       _.slice(
         bingoNumbers,
         count - 5 <= 0 ? 0 : count - 6,
         count - 1 <= 0 ? 0 : count - 1
       )
     );
+    if (lastFive.length === 0) {
+      return [""];
+    }
+    return lastFive;
   };
 
   const resetBingo = () => {

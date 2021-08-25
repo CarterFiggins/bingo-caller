@@ -14,22 +14,20 @@ body {
 .text {
   padding: 0.5rem;
   font-size: 1.5rem;
-  /* color: black; */
   color: white;
 }
 
 .bingo-title {
   font-size: 3.8rem;
   margin-bottom: 1rem;
-  /* color: black; */
   color: white;
 }
 
 .bingo-button {
   margin-top: 1rem;
   font-size: 1.5rem;
-  background-color: black;
-  border: black 0.1rem solid;
+  background-color: #0c326b;
+  border: #0c326b 0.1rem solid;
   border-radius: 0.5rem;
   outline: none;
   color: white;
@@ -37,12 +35,12 @@ body {
 }
 
 .bingo-button:hover {
-  background-color: #777;
-  border: black 0.1rem solid;
+  background-color: #0a244d8f;
+  border: #0c326b 0.1rem solid;
 }
 
 .bingo-button:active {
-  background-color: #999;
+  background-color: #0a244d;
 }
 
 .flex-center {
@@ -54,24 +52,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
   height: 10rem;
   width: 10rem;
-  font-size: 4rem;
-  color: white;
-  background-color: #ff3300;
+  font-size: 3.8rem;
+  background-color: #ffef96;
   border-radius: 50%;
   margin-top: 1rem;
 }
 
 .small-bingo-ball {
   display: flex;
+  font-weight: bold;
   justify-content: center;
   align-items: center;
   height: 5rem;
   width: 5rem;
   font-size: 2rem;
-  color: white;
-  background-color: #ff3300;
+  background-color: #ffef96;
   border-radius: 50%;
   margin: 0 1rem;
 }
@@ -96,11 +94,11 @@ body {
   border: white 0.2rem solid;
   border-radius: 0.4rem;
   color: white;
-  background-color: black;
+  background-color: #0c326b;
 }
 
 .filled {
-  background-color: #ff3300;
+  background-color: #ffef96;
   color: white;
 }
 
@@ -109,20 +107,20 @@ body {
   position: absolute;
   left: 6.6rem;
   color: white;
-  background-color: black;
-  border: black 0.1rem solid;
+  background-color: #0c326b;
+  border: #0c326b 0.1rem solid;
   border-radius: 0.3rem;
   padding: 0.2rem;
   font-size: 1.1rem;
 }
 
 .grid-button:hover {
-  background-color: #777;
-  border: black 0.1rem solid;
+  background-color: #0c326b8f;
+  border: #0c326b 0.1rem solid;
 }
 
 .grid-button:active {
-  background-color: #999;
+  background-color: #0a244d;
 }
 
 .timer-location {
@@ -134,19 +132,19 @@ body {
   margin: 0.5rem;
   text-decoration: none;
   color: white;
-  background-color: black;
-  border: black 0.1rem solid;
+  background-color: #0c326b;
+  border: #0c326b 0.1rem solid;
   border-radius: 0.3rem;
   padding: 0.2rem;
   font-size: 1.1rem;
 }
 .timer-button:hover {
-  background-color: #777;
-  border: black 0.1rem solid;
+  background-color: #0c326b8f;
+  border: #0c326b 0.1rem solid;
 }
 
 .timer-button:active {
-  background-color: #999;
+  background-color: #0a244d;
 }
 
 .bottom-space {
@@ -173,14 +171,13 @@ table {
 td {
   width: 10rem;
   font-size: 2rem;
-  color: black;
-  background-color: #ffef96;
+  background-color: #ddf2ff;
   padding: 0 2rem;
 }
 
 th {
   width: 8rem;
-  background-color: black;
+  background-color: #0c326b;
   color: white;
   font-size: 3rem;
 }
