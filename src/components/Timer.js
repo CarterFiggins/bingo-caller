@@ -27,12 +27,21 @@ export default function Timer() {
 
   return (
     <div className="timer">
-      <button onClick={() => history.goBack()}>Back</button>
-      <button onClick={() => setStartTimer((startTimer) => !startTimer)}>
-        {startTimer ? "Pause Timer" : "Start Timer"}
-      </button>
-      <button onClick={() => resetTimer()}>Reset Timer</button>
+      <div>
+        <button className="timer-button" onClick={() => history.goBack()}>
+          Back
+        </button>
+      </div>
       <div className="time">{time}</div>
+      <button
+        className="timer-button"
+        onClick={() => setStartTimer((startTimer) => !startTimer)}
+      >
+        {startTimer ? "Pause" : "Start"}
+      </button>
+      <button className="timer-button" onClick={() => resetTimer()}>
+        Reset
+      </button>
     </div>
   );
 }

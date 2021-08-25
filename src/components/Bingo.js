@@ -68,7 +68,7 @@ export default function Bingo() {
       <button className="grid-button" onClick={() => setShowGrid(!showGrid)}>
         Show Bingo Grid
       </button>
-      <Link className="timer-button" to={"/timer"}>
+      <Link className="timer-button timer-location" to={"/timer"}>
         Timer
       </Link>
 

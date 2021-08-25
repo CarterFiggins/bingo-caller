@@ -2,12 +2,13 @@
   text-align: center;
 }
 
-body #bingo {
-  background: repeating-radial-gradient(black, blue 70px);
+body {
+  background: #4885a5;
 }
 
 .time {
   font-size: 20rem;
+  color: white;
 }
 
 .text {
@@ -124,11 +125,14 @@ body #bingo {
   background-color: #999;
 }
 
-.timer-button {
-  margin-top: 0.5rem;
-  text-decoration: none;
+.timer-location {
   position: absolute;
   right: 6.6rem;
+}
+
+.timer-button {
+  margin: 0.5rem;
+  text-decoration: none;
   color: white;
   background-color: black;
   border: black 0.1rem solid;
