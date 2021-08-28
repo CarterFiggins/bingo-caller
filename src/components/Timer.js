@@ -25,23 +25,37 @@ export default function Timer() {
     setTime(60);
   };
 
+  const url = "https://www.youtube.com/watch?v=ebvtJCu33vM";
+
   return (
-    <div className="timer">
+    <div>
       <div>
         <button className="timer-button" onClick={() => history.goBack()}>
           Back
         </button>
       </div>
-      <div className="time">{time}</div>
-      <button
-        className="timer-button"
-        onClick={() => setStartTimer((startTimer) => !startTimer)}
-      >
-        {startTimer ? "Pause" : "Start"}
-      </button>
-      <button className="timer-button" onClick={() => resetTimer()}>
-        Reset
-      </button>
+
+      <iframe
+        className="video-timer"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ebvtJCu33vM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
     </div>
   );
 }
+
+//   <div className="time">{time}</div>
+//   <button
+//     className="timer-button"
+//     onClick={() => setStartTimer((startTimer) => !startTimer)}
+//   >
+//     {startTimer ? "Pause" : "Start"}
+//   </button>
+//   <button className="timer-button" onClick={() => resetTimer()}>
+//     Reset
+//   </button>

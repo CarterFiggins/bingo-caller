@@ -164,6 +164,12 @@ body {
   align-items: center;
 }
 
+.video-timer {
+  padding: 0 0;
+  height: 49rem;
+  width: 100%;
+}
+
 table {
   margin: 1rem;
   border-collapse: collapse;
